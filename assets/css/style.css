@@ -1,0 +1,1308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+
+/*--- Header ---*/
+
+header {
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logoImg,
+.logoImg img {
+    width: 80px;
+    height: 80px;
+}
+
+.menuOpener {
+    display: none;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 5px solid #000;
+}
+
+.menu li a:hover,
+.menu .active a {
+    border-bottom: 5px solid #b28756;
+    color: #ccc;
+}
+
+
+/*--- End Header ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Footer ---*/
+
+footer {
+    background-color: #000;
+    padding: 20px;
+}
+
+.footerArea {
+    max-width: 1140px;
+    margin: auto;
+    color: #FFF;
+    display: flex;
+}
+
+.footerItem {
+    flex: 1;
+}
+
+.footerSocial {
+    display: flex;
+}
+
+.footerSocial a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+.footerSocial a:hover {
+    background-color: #B28756;
+}
+
+.footerSocial img {
+    height: 10px;
+}
+
+.footerItem.area2 {
+    color: #999;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 0 10px 10px 10px;
+}
+
+.footerItem.area3 form {
+    background-color: #333;
+    text-align: center;
+    padding: 30px;
+}
+
+.footerItem.area3 input {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #CCC;
+    outline: 0;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*--- End Footer ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Banner ---*/
+
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.banner .slideArea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner h1 span {
+    color: #b28756;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #b28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.buttonDark {
+    background-color: #000;
+}
+
+.buttonDark:hover {
+    background-color: #B28756;
+}
+
+.banner .slidersPointers {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: #b28756;
+}
+
+
+/*--- End Banner ---*/
+
+
+/* -------------------------------------- */
+
+
+/* Default sections */
+
+.default {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.default.light {
+    background-color: #f7f7f7;
+}
+
+.default.light .sectionTitle,
+.default.light .sectionBody {
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000;
+}
+
+.default.dark .sectionTitle,
+.default.dark .sectionBody {
+    color: #fff;
+}
+
+.default .sectionTitle,
+.default .sectionDesc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .sectionTitle {
+    font-size: 20px;
+}
+
+.default .sectionDesc {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .sectionBody {
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+/*--- End Default sections ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- About Us ---*/
+
+.sectionAboutUs {
+    display: flex;
+}
+
+.sectionAboutUsLeft {
+    flex: 1;
+}
+
+.sectionAboutUsLeft p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.sectionAboutUsRight {
+    width: 520px;
+    text-align: center;
+}
+
+.sectionAboutUsRight img {
+    width: 480px;
+    box-shadow: 0px 5px 20px #333;
+}
+
+
+/*--- End About Us ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Services ---*/
+
+.sectionServices {
+    display: flex;
+}
+
+.sectionService {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #555;
+    padding: 20px;
+}
+
+.sectionService:first-child {
+    border-left: 1px solid #555;
+}
+
+.sectionService h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.sectionService p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+
+/*--- End Services ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Projects ---*/
+
+.sectionProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionProjectsFilters {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.sectionProjectsFilters ul,
+.sectionProjectsFilters li {
+    list-style: none;
+}
+
+.sectionProjectsFilters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-left: 1px solid #ccc;
+    color: #555;
+    border-bottom: 3px solid #eee;
+    cursor: pointer;
+}
+
+.sectionProjectsFilters li:hover,
+.sectionProjectsFilters li.active {
+    border-bottom: 3px solid #b28756;
+}
+
+.sectionProjectsFilters li:first-child {
+    border-left: 0;
+}
+
+.sectionProjectsPhotos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sectionProjectsPhoto {
+    width: 280px;
+}
+
+.sectionProjectsPhotoArea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.sectionProjectsPhotoArea img {
+    width: inherit;
+    height: inherit;
+}
+
+.sectionProjectsPhotoInfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.sectionProjectsPhotoInfo h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sectionProjectsPhotoArea:hover .sectionProjectsPhotoInfo {
+    display: flex;
+}
+
+
+/*--- End Projects ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Our Team ---*/
+
+.bgTeam {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.sectionTeamArea {
+    background-color: rgba(0, 0, 0, .8);
+    padding: 50px 0;
+}
+
+.sectionTeam {
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.sectionTeam .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.sectionTeam .slide {
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.sectionTeam .slideArea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 30px;
+}
+
+.sectionTeamArea .slidersPointers {
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTeamArea .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.sectionTeamArea .pointer.active {
+    background-color: #b28756;
+}
+
+.sectionTeamAvatar {
+    width: 150px;
+    height: auto;
+}
+
+.sectionTeamName {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+    ;
+}
+
+.sectionTeamRole {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.sectionTeamSocial {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sectionTeamSocial a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+.sectionTeamSocial a:hover {
+    background-color: #b28756;
+}
+
+
+/*--- End Our Team ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Testimonials ---*/
+
+.testimonials .sectionBody {
+    max-width: initial;
+}
+
+.sectionTestimonials {
+    overflow: hidden;
+}
+
+.sectionTestimonials .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.sectionTestimonials .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+}
+
+.sectionTestimonials .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTestimonialsAvatar {
+    width: 100px;
+}
+
+.sectionTestimonialsName {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.sectionTestimonialsRole {
+    font-size: 14px;
+}
+
+.sectionTestimonialsQuoteimg {
+    width: 20px;
+    margin-top: 30px;
+}
+
+.sectionTestimonialsQuote {
+    margin-top: 10px;
+    font-size: 13px;
+    max-width: 700px;
+    color: #555;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.sectionTestimonials .slidersPointers {
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.sectionTestimonials .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.sectionTestimonials .pointer.active {
+    background-color: #B28756;
+}
+
+
+/*--- End Testimonials ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Companies ---*/
+
+.sectionCompanies {
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+}
+
+.sectionCompaniesArea {
+    display: flex;
+    align-items: center;
+}
+
+.sectionCompany {
+    flex: 1;
+    text-align: center;
+}
+
+
+/*--- End Companies ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Prices ---*/
+
+.sectionPrice {
+    display: flex;
+}
+
+.sectionPriceItem {
+    flex: 1;
+    background-color: #FFF;
+    margin-right: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sectionPriceItem:last-child {
+    margin-right: 0;
+}
+
+.sectionPriceItemName {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sectionPriceItemMoney {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.sectionPriceItemPeriod {
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.sectionPriceItemPoint {
+    font-size: 12px;
+}
+
+
+/*--- End Prices ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Premium ---*/
+
+.premium {
+    background-color: #FFF !important;
+    border-top: 1px solid #CCC;
+}
+
+.premium .sectionBody {
+    max-width: initial;
+}
+
+.sectionPremium {
+    overflow: hidden;
+}
+
+.sectionPremium a {
+    margin-top: 30px;
+}
+
+.sectionPremium .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.sectionPremium .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+}
+
+.sectionPremium .slidearea {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    border-bottom: 1px solid #CCC;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.sectionPremiumLeft {
+    flex: 1;
+    text-align: right;
+}
+
+.sectionPremiumLeft img {
+    width: 300px;
+    margin-right: 30px;
+}
+
+.sectionPremiumRight {
+    flex: 1;
+}
+
+.sectionPremiumItem {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.sectionPremiumItem img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.sectionPremiumItem div {
+    flex: 1;
+    color: #999;
+    line-height: 20px;
+}
+
+.sectionPremiumItem div h4 {
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.sectionPremium .slidersPointers {
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.sectionPremium .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.sectionPremium .pointer.active {
+    background-color: #B28756;
+}
+
+
+/*--- End Premium ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Fact ---*/
+
+.sectionFacts {
+    display: flex;
+}
+
+.sectionFact {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+.sectionFact h3 {
+    color: #B28756;
+    font-size: 45px;
+}
+
+.sectionFactLine {
+    width: 20px;
+    border-bottom: 2px solid #B28756;
+    margin: auto;
+}
+
+.sectionFact h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.sectionFact p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+
+/*--- End Fact ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Share ---*/
+
+.sectionShare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF;
+    color: #999;
+}
+
+.sectionShareLegend {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.sectionShareLegend img {
+    margin-right: 10px;
+}
+
+.sectionShareItem {
+    fontSize: 12px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sectionShareIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #CCC;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionShareIcon img {
+    height: 12px;
+}
+
+.sectionShareIcon.twitter {
+    background-color: #34c5f0;
+}
+
+.sectionShareIcon.linkedin {
+    background-color: #127cb4;
+}
+
+.sectionShareIcon.facebook {
+    background-color: #336297;
+}
+
+.sectionShareIcon.googleplus {
+    background-color: #e74237;
+}
+
+.sectionShareIcon.pinterest {
+    background-color: #b71c29;
+}
+
+
+/*--- End Share ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Contact ---*/
+
+.sectionContact {
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+}
+
+.sectionContact input[type=text],
+.sectionContact textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #CCC;
+    outline: 0;
+    margin-top: 10px;
+}
+
+.sectionContact textarea {
+    height: 100px;
+    resize: none;
+}
+
+.sectionContactSplit {
+    display: flex;
+}
+
+.sectionContactSplit input:first-child {
+    margin-right: 20px;
+}
+
+
+/*--- End Contact ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- Map ---*/
+
+.sectionMap {
+    background-image: url('../images/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sectionMapArea {
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.sectionMapInfo {
+    width: 50%;
+    padding: 30px;
+    background-color: #FFF;
+    color: #000;
+}
+
+.sectionMapInfoItem {
+    display: flex;
+    align-items: center;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.sectionMapInfoItemImg {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #999;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.sectionMapInfoItemImg img {
+    width: 15px;
+    height: auto;
+}
+
+
+/*--- End Map ---*/
+
+
+/* -------------------------------------- */
+
+
+/*--- RESPONSIVE ---*/
+
+
+/*----- TABLET -----*/
+
+@media (min-width:451px) and (max-width:800px) {
+    .logo {
+        margin-left: 30px;
+    }
+    .menuOpener {
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, .9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 25px;
+        margin-left: 50px;
+        border: 0;
+    }
+    .menu li.active a {
+        border: 0;
+        color: #b28756;
+    }
+    .sectionAboutUs {
+        flex-direction: column;
+    }
+    .sectionAboutUsLeft {
+        margin: 30px;
+        margin-top: 0;
+    }
+    .sectionAboutUsRight {
+        width: auto;
+    }
+    .sectionServices {
+        flex-wrap: wrap;
+    }
+    .sectionService {
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+    .sectionService:first-child {
+        border-left: 0;
+    }
+    .sectionTeam {
+        max-width: 580px;
+    }
+    .sectionMap {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .sectionMapArea {
+        width: auto;
+    }
+    .sectionMapInfo {
+        width: auto;
+    }
+    .sectionMapInfoItem {
+        margin-bottom: 20px;
+    }
+    .sectionMapInfoItem:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/*----- MOBILE -----*/
+
+@media (max-width:450px) {
+    .logo {
+        margin-left: 30px;
+    }
+    .menuOpener {
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, .9);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 60px;
+        font-size: 17px;
+        margin-left: 30px;
+        border: 0;
+    }
+    .menu li.active a {
+        border: 0;
+        color: #b28756;
+    }
+    .banner h1 {
+        font-size: 35px;
+    }
+    .banner h2 {
+        font-size: 17px;
+    }
+    .sectionAboutUs {
+        flex-direction: column;
+    }
+    .sectionAboutUsLeft {
+        margin: 30px;
+        margin-top: 0;
+    }
+    .sectionAboutUsRight {
+        margin-left: 30px;
+        margin-right: 30px;
+        width: auto;
+    }
+    .sectionAboutUsRight img {
+        width: 100%;
+    }
+    .sectionServices {
+        flex-wrap: wrap;
+    }
+    .sectionService {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+    .sectionService:first-child {
+        border-left: 0;
+    }
+    .sectionProjectsFilters {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .sectionProjectsPhoto {
+        width: 320px;
+    }
+    .sectionProjectsPhotoArea {
+        width: 300px;
+        height: 190px;
+    }
+    .sectionTeam {
+        max-width: 280px;
+    }
+    .sectionMap {
+        padding: 0;
+        padding-bottom: 250px;
+    }
+    .sectionMapArea {
+        width: auto;
+    }
+    .sectionMapInfo {
+        width: auto;
+    }
+    .sectionMapInfoItem {
+        margin-bottom: 20px;
+    }
+    .sectionMapInfoItem:last-child {
+        margin-bottom: 0;
+    }
+    .sectionCompaniesArea {
+        flex-wrap: wrap;
+    }
+    .sectionCompany {
+        min-width: 50%;
+        margin-bottom: 20px;
+    }
+    .sectionPrice {
+        flex-wrap: wrap;
+    }
+    .sectionPriceItem {
+        margin-left: 20px;
+        min-width: calc(100% - 40px);
+        margin-bottom: 20px;
+    }
+    .sectionPriceItem:last-child {
+        margin-right: 20px;
+    }
+    .sectionPremium .slidearea {
+        flex-direction: column;
+    }
+    .sectionPremiumLeft {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .sectionPremiumRight {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sectionFacts {
+        flex-wrap: wrap;
+    }
+    .sectionFact {
+        min-width: 100%;
+    }
+    .sectionShare {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .sectionShareLegend {
+        width: 100vw;
+        margin: 0;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .sectionShareItem {
+        min-width: 50%;
+        max-width: 50%;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .sectionContact {
+        max-width: 100vw;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .sectionContactSplit {
+        flex-direction: column;
+    }
+    .footerArea {
+        flex-direction: column;
+    }
+    .footerItem {
+        margin-bottom: 20px;
+    }
+    .footerSocial {
+        justify-content: center;
+    }
+}
